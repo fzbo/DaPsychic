@@ -1,6 +1,6 @@
 //HERE WE ARE CREATING A LIST OF SIX OPTIONS FOR LUNCH CHOICES
  	var lunch = ["Pizza", "Sub", "Wings", "Salad", "Fried Chicken", "Hamburger"];
-//THIS ARRAY WILL HOLD WHAT WE GUESS
+//THIS ARRAY WILL HOLD USER GUESSES
  	var guessedLunch = [];
 //THIS VARIABLE WILL BE RANDOMLY ASSIGNED ONE OF THE SIX FOOD CHOICES
 	var lunchToGuess = null;
@@ -36,6 +36,36 @@
 };
 
 //EXECUTE ON PAGE LOAD
-	updateLetterToGuess();
+	updateLunchToGuess();
 	updateGuessesLeft();
 	
+//THIS FUNCTION WILL CAPTURE THE KEYBOARD CLICKS
+	document.onkeyup = function(event) {
+//THIS FUNCTION IS GOING TO REDUCE THE GUESSES BY ONE
+	guessesLeft--;
+
+//THIS METHOD UPON USER ENTRY WILL DROP TO LOWERCASE
+	var lunches = String.fromCharCode(event.keyCode).toLowerCase();
+//THEN ADD THE GUESS TO THE guessedLunch ARRAY
+	guessedLunch.push(lunch);
+//THEN ITS GOING TO RUN THE UPDATE FUNCTIONS
+	updateGuessesLeft();
+	updateGuessesSoFar();
+//WE'LL CHECK IF THERE IS A MATCH
+	if (lunches === lunchToGuess) {
+//IF THERE IS A MATCH WE WIN AND WE'LL UPDATE THE HTML TO DISPLAY THE WIN
+	wins++;
+	document.querySelector("#wins").innerHTML = wins;
+//THEN WE WILL RESET THE GAME
+	reset();
+	}
+//IF WE ARE OUT OF GUESSES
+	if (guessesLeft === 0){
+//THEN WE WILL LOSE AND WE WILL UPDATE THE HTML TO DISPLAY THE LOSS. 
+	losses++;
+	document.querySelector("#losses").innerHTML = losses;
+//THEN WE WIL CALL THE RESET
+	reset();
+	}
+
+};
