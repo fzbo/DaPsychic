@@ -4,6 +4,7 @@
 	background:url(psychictoon.jpg);
 	background-size:cover;
     background-position:center;
+   
     
 }
 
@@ -45,4 +46,8 @@ p {
 
 #guesses-so-far {
 	color: #8904B1;
+}
+
+#footer{
+	font-size: small;
 }
