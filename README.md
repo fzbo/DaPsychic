@@ -1,5 +1,7 @@
 # DaPsychic
 ## Introducing JavaScript concepts through a simple game called Da Psychic Game. 
+![psychictoon](https://user-images.githubusercontent.com/30742763/36124249-5c87d76e-101d-11e8-8671-9e0738797802.jpg)
+
 
 ## Game Objective
 ### Guess what letter I am thinking of.
