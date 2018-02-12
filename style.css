@@ -23,4 +23,11 @@ h1 {
 	font-family: Baloo;
 }
 
+p {
+	color: gray;
+	text-align: center;
+	line-height: 1.8
+	font-size: 50px;
+}
+
 
