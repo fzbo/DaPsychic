@@ -1,0 +1,24 @@
+.jumbotron {
+	text-align: center;
+	font-family: Baloo;
+	background:url(psychictoon.jpg);
+	background-size:cover;
+    background-position:center;
+    
+}
+
+#name {
+	color:#D90026;
+	
+	
+
+}
+
+h1 {
+	padding-top: 285px;
+}
+
+.header2 {
+	text-align: center;
+	font-family: Baloo;
+}
