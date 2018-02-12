@@ -1,8 +1,8 @@
 # DaPsychic
 ## Introducing JavaScript concepts through a simple game called Da Psychic Game. 
 
-# Game Objective
-## Guess what letter I am thinking of.
+## Game Objective
+### Guess what letter I am thinking of.
 
 * Wins: (# of times the user has guessed the letter correctly).
 
